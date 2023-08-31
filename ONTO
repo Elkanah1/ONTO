@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2023/7/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2023/7/untitled-ontology-11"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2023/7/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontology#Accident -->
+
+    <owl:Class rdf:about="http://example.org/ontology#Accident"/>
+    
+
+
+    <!-- http://example.org/ontology#AccidentType -->
+
+    <owl:Class rdf:about="http://example.org/ontology#AccidentType"/>
+    
+
+
+    <!-- http://example.org/ontology#ChemicalAccident -->
+
+    <owl:Class rdf:about="http://example.org/ontology#ChemicalAccident">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology#AccidentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology#ElectricalAccident -->
+
+    <owl:Class rdf:about="http://example.org/ontology#ElectricalAccident">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology#AccidentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology#FireAccident -->
+
+    <owl:Class rdf:about="http://example.org/ontology#FireAccident">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology#AccidentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology#IncompleteInvestigation -->
+
+    <owl:Class rdf:about="http://example.org/ontology#IncompleteInvestigation"/>
+    
+
+
+    <!-- http://example.org/ontology#Investigation -->
+
+    <owl:Class rdf:about="http://example.org/ontology#Investigation"/>
+    
+
+
+    <!-- http://example.org/ontology#Investigator -->
+
+    <owl:Class rdf:about="http://example.org/ontology#Investigator"/>
+    
+
+
+    <!-- http://example.org/ontology#KineticAccident -->
+
+    <owl:Class rdf:about="http://example.org/ontology#KineticAccident">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology#AccidentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology#LiquidAccident -->
+
+    <owl:Class rdf:about="http://example.org/ontology#LiquidAccident">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology#AccidentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology#Object -->
+
+    <owl:Class rdf:about="http://example.org/ontology#Object"/>
+    
+
+
+    <!-- http://example.org/ontology#Person -->
+
+    <owl:Class rdf:about="http://example.org/ontology#Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontology#MotorGenerator -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#MotorGenerator">
+        <rdf:type rdf:resource="http://example.org/ontology#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology#Tom -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#Tom">
+        <rdf:type rdf:resource="http://example.org/ontology#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology#WorkshopFire -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#WorkshopFire">
+        <rdf:type rdf:resource="http://example.org/ontology#Accident"/>
+        <rdf:type rdf:resource="http://example.org/ontology#AccidentType"/>
+        <rdf:type rdf:resource="http://example.org/ontology#FireAccident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology#WorkshopFireInvestigation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#WorkshopFireInvestigation">
+        <rdf:type rdf:resource="http://example.org/ontology#IncompleteInvestigation"/>
+        <rdf:type rdf:resource="http://example.org/ontology#Investigation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology#Zac -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#Zac">
+        <rdf:type rdf:resource="http://example.org/ontology#Investigator"/>
+        <rdf:type rdf:resource="http://example.org/ontology#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/7/untitled-ontology-5#WorkshopFireInvestigation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/7/untitled-ontology-5#WorkshopFireInvestigation">
+        <rdf:type rdf:resource="http://example.org/ontology#IncompleteInvestigation"/>
+        <rdf:type rdf:resource="http://example.org/ontology#Investigation"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
